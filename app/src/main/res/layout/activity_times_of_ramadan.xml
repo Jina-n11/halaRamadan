@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/times"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginTop="@dimen/spaceNormal"
+    android:background="@drawable/background_times_radius"
+    android:padding="@dimen/spaceMid"
+    android:paddingStart="@dimen/spaceNormal"
+    android:paddingEnd="@dimen/spaceNormal"
+    android:orientation="vertical"
+    app:layout_constraintStart_toStartOf="@id/title"
+    app:layout_constraintTop_toBottomOf="@id/title">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/spaceSmall">
+
+        <ImageView
+            android:id="@+id/iconAmisak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/amisak"
+            app:tint="@color/primaryColor" />
+
+        <TextView
+            android:id="@+id/amisakTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/spaceSmall"
+            android:text="@string/amisakTime"
+            android:textSize="@dimen/subTitleTextSize" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/iconDawn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/dawn"
+            app:tint="@color/primaryColor" />
+
+        <TextView
+            android:id="@+id/dawnTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/spaceSmall"
+            android:text="@string/dawnTime"
+            android:textSize="@dimen/subTitleTextSize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iconAleasr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/aleasr"
+            app:tint="@color/primaryColor" />
+
+        <TextView
+            android:id="@+id/aleasrTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/spaceSmall"
+            android:text="@string/alaserTime"
+            android:textSize="@dimen/subTitleTextSize" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/iconAftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/spaceNormal"
+            android:src="@drawable/aftar"
+            app:tint="@color/primaryColor" />
+
+        <TextView
+            android:id="@+id/aftarTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spaceSmall"
+            android:text="@string/aftarTime"
+            android:textSize="@dimen/subTitleTextSize"
+            app:layout_constraintTop_toTopOf="@id/iconAmisak" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

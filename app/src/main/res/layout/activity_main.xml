@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ramadanFirst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/spaceNormal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/ramadann" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ramadan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/spaceNormal"
+        android:paddingBottom="@dimen/paddingBottomImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/ramdani"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ramadanCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spaceNormal"
+        android:layout_marginTop="@dimen/spaceNormal"
+        android:layout_marginEnd="@dimen/spaceNormal"
+        android:background="@drawable/background_radius"
+        android:padding="@dimen/spaceMid"
+        android:paddingBottom="@dimen/spaceSmall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ramadan">
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="@dimen/lineWidth"
+            android:layout_height="@dimen/miniSmalSpace"
+            android:layout_marginTop="@dimen/spaceSmall"
+            android:layout_marginBottom="@dimen/spaceNormal"
+            android:background="@drawable/background_times_radius"
+            app:layout_constraintStart_toStartOf="@id/ramadanCalendar"
+            app:layout_constraintEnd_toEndOf="@id/ramadanCalendar"
+            app:layout_constraintTop_toTopOf="@id/ramadanCalendar"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spaceMid"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="@string/dayesOfRamadan"
+            android:textColor="@color/blackColorWithOpacity"
+            android:textSize="@dimen/headerTextSize"
+            app:layout_constraintStart_toStartOf="@id/ramadanCalendar"
+            app:layout_constraintTop_toTopOf="@id/line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dataTime"
+            android:textSize="@dimen/bodyTextSize"
+            app:layout_constraintBottom_toBottomOf="@id/title"
+            app:layout_constraintEnd_toEndOf="@id/ramadanCalendar"
+            app:layout_constraintTop_toTopOf="@id/title" />
+
+        <include
+            android:id="@+id/times"
+            layout="@layout/activity_times_of_ramadan"
+            app:layout_constraintStart_toStartOf="@id/title"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+
+        <TextView
+            android:id="@+id/quranic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spaceNormal"
+            android:fontFamily="@font/nunito"
+            android:text="@string/today_s_quranic_verse"
+            android:textColor="@color/blackColorWithOpacity"
+            android:textSize="@dimen/titleTextSize"
+            app:layout_constraintStart_toStartOf="@id/ramadanCalendar"
+            app:layout_constraintTop_toBottomOf="@id/times" />
+
+        <TextView
+            android:id="@+id/verse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/miniSmalSpace"
+            android:text="@string/verseText"
+            android:textSize="@dimen/bodyTextSize"
+            app:layout_constraintEnd_toEndOf="@id/ramadanCalendar"
+            app:layout_constraintTop_toBottomOf="@id/quranic" />
+
+
+        <TextView
+            android:id="@+id/work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spaceNormal"
+            android:fontFamily="@font/nunito"
+            android:text="@string/today_s_prayer"
+            android:textColor="@color/blackColorWithOpacity"
+            android:textSize="@dimen/titleTextSize"
+            app:layout_constraintStart_toStartOf="@id/ramadanCalendar"
+            app:layout_constraintTop_toBottomOf="@id/verse" />
+
+        <TextView
+            android:id="@+id/prayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/miniSmalSpace"
+            android:text="@string/prayerText"
+            android:textSize="@dimen/bodyTextSize"
+            app:layout_constraintEnd_toEndOf="@id/ramadanCalendar"
+            app:layout_constraintTop_toBottomOf="@id/work" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

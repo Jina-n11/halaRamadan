@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spaceNormal">16dp</dimen>
+    <dimen name="spaceSmall">8dp</dimen>
+    <dimen name="subTitleTextSize">14sp</dimen>
+    <dimen name="spaceMid">12dp</dimen>
+    <dimen name="bodyTextSize">12sp</dimen>
+    <dimen name="miniSmalSpace">4dp</dimen>
+    <dimen name="titleTextSize">16sp</dimen>
+    <dimen name="headerTextSize">20sp</dimen>
+    <dimen name="lineWidth">44dp</dimen>
+    <dimen name="paddingBottomImage">62dp</dimen>
+</resources>

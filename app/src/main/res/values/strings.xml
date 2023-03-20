@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">hala_ramadan</string>
+    <string name="amisakTime">4:31 am</string>
+    <string name="dawnTime">4:41 am</string>
+    <string name="alaserTime">3:41 pm</string>
+    <string name="aftarTime">6:18 pm</string>
+    <string name="prayerText">O Allah, allow me to reach the month of Ramadan, and grant me good health during it. Accept it from me and grant it to me with acceptance.</string>
+    <string name="today_s_prayer">Today\'s prayer</string>
+    <string name="verseText">The month of Ramadan [is that] in which was revealed the Quran, a guidance for the people and clear proofs of guidance and criterion.</string>
+    <string name="today_s_quranic_verse">Today\'s Quranic verse</string>
+    <string name="dataTime">Thu, 23 Mar</string>
+    <string name="dayesOfRamadan">1 Ramadan</string>
+    <string name="ramadanYears">1444 Ramadan</string>
+</resources>
